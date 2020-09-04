@@ -1,0 +1,2610 @@
+$color__brand: #f16d7f;
+$color__text: #222222;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+.center{
+    padding: 0 calc(50% - 570px)
+}
+
+.top{
+    flex-grow: 1;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+   
+}
+
+.header__left,
+.header__right{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.BRAN{
+    font-family: 'Lato';
+    font-size: 27px;
+    font-weight: 300;
+    color: rgba(62, 62, 64, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.BRAN_D{
+    font-family: 'Lato';
+    font-size: 27px;
+    font-weight: 900;
+    color: $color__brand;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.header__form{
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+    border: none;
+    position: relative;
+}
+
+.header__form:hover .drop__header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text__header{
+    width: 100%;
+    padding: 17px 57px 17px 15px;
+    color: #555;
+    outline: none;
+    
+}
+ 
+.submit__header{
+    font-family: 'Lato';       
+    font-size: 14px;
+    font-weight: 300;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    top: 0;
+    right: -30%;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 8px;
+    z-index: 100;
+}
+
+.submit__header:hover {
+    opacity: 1;
+}
+
+.button__header{
+    font-family: 'Lato';       
+    font-size: 14px;
+    font-weight: 300;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    top: 0;
+    right: -30%;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    
+}
+
+.drop__header{
+    background-color: #ffffff;
+    border-radius: 5px; 
+    padding: 12px;
+    position: absolute;
+    top: 52px;
+    display: none;
+}
+
+.header__basket{
+    margin-right: 26px;
+}
+
+.logo__img{
+    margin-right: 13px;
+}
+
+.header__right{
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+
+}
+.submit__cart{
+     display: flex;
+    align-items: center;
+    border: none;
+    position: relative;
+}
+
+.submit__cart:hover .button__cart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button{
+    font-size: 15px;
+    color: #ffffff;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 38px;
+    background-color: $color__brand;
+    padding: 8px 20px;
+    font-weight: 300;
+    top: 0;
+    right: -30%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button__cart{    
+    background-color: #ffffff;
+    border-radius: 5px; 
+    padding: 12px;
+    position: absolute;
+    top: 52px;
+    display: none;
+    .rebox__zane__men{
+        display: flex;
+        flex-direction: row;        
+        &__men1{
+            flex-direction: column;
+            margin-top: 15px;
+            &__text1{
+                font-family: 'Lato';
+                font-size: 12px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                text-transform: uppercase;
+            }
+            &__text2{
+                font-family: 'Lato';
+                font-size: 12px;
+                color: rgba(241, 109, 127, 1);
+                text-transform: uppercase;
+            }
+        }
+        &__img3{
+            margin-left: 78px;
+            margin: 35px;
+        }
+        
+
+
+    }
+ 
+     .rebox__zane__men{
+        display: flex;
+        flex-direction: row;        
+        &__men1{
+            flex-direction: column;
+            margin-top: 15px;
+            &__text1{
+                font-family: 'Lato';
+                font-size: 12px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                text-transform: uppercase;
+            }
+            &__text2{
+                font-family: 'Lato';
+                font-size: 12px;
+                color: rgba(241, 109, 127, 1);
+                text-transform: uppercase;
+            }
+        }
+        &__img3{
+            margin-left: 78px;
+            margin: 35px;
+        }
+        
+
+
+    }
+
+    .rebox__zane__women{
+        display: flex;
+        flex-direction: row; 
+        border-top: 1px solid rgba(237, 237, 237, 0.75); 
+        border-bottom: 1px solid rgba(237, 237, 237, 0.75);       
+        &__men1{
+            flex-direction: column;
+            margin-top: 15px;
+            &__text1{
+                font-family: 'Lato';
+                font-size: 12px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                text-transform: uppercase;
+            }
+            &__text2{
+                font-family: 'Lato';
+                font-size: 12px;
+                color: rgba(241, 109, 127, 1);
+                text-transform: uppercase;
+            }
+        }
+        &__img3{
+            margin-left: 78px;
+            margin: 35px;
+        }
+    }
+    .total__basket{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        &__text1{
+           justify-content: flex-start; 
+           font-family: 'Lato';
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(34, 34, 34, 1);
+            text-transform: uppercase;
+        }
+        &__text2{
+            margin-left: 120px;
+            font-family: 'Lato';
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(34, 34, 34, 1);
+            text-transform: uppercase;
+        }
+    }
+    .checkout{
+        margin-bottom: 20px;
+        margin-left: 7px;
+        &__button{
+            cursor: pointer;
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid rgba(241, 109, 127, 1);
+            text-transform: uppercase;
+            color: rgba(241, 109, 127, 1);
+            padding: 15px 70px;
+    
+        }
+    }
+    .go__to__cart{
+        margin-bottom: 20px;
+        margin-left: 7px;
+        margin-top: 20px;
+        &__button{
+            cursor: pointer;
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(234, 234, 234, 1);
+            padding: 15px 70px;
+    
+        }
+    }
+   
+}
+
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__list{
+    position: relative;
+}
+
+.menu__list:hover .drop{
+    display: flex;
+}
+
+.menu__list:hover .drop__last{
+    right: 0;
+}
+
+.menu__link{
+    padding: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: $color__text;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.drop{
+    background-color: #ffffff;
+    border-radius: 5px; 
+    padding: 12px;
+    position: absolute;
+    top: 52px;
+    display: none;
+}
+
+.drop__flex{
+    margin-right: 46px;
+}
+
+.drop__flex:last-child {
+    margin-right: 0;
+}
+
+.drop__flex__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.drop__flex__img{
+    position: absolute;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.drop__flex__h4{
+    position: relative;
+    font-family: 'Lato';
+    font-size:  #ffffff;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drop__h3{
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #232323;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    width:234px;
+    margin-bottom: 8px;
+}
+
+.drop__ul{
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.drop__a{
+    font-family: 'Lato';
+    font-size: 14px;
+    color: rgba(100, 100, 100, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+}
+
+.promo{
+    background-color: #e8e8e8;
+}
+
+.promo__box{
+    height: 614px;
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center -51px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.promo__content{
+    margin-top: 224px;
+    border-left: 12px solid $color__brand;
+    padding-left: 12px;
+}
+
+.promo__h1{
+    font-family: 'Lato';
+    font-size: 60px;
+    font-weight: 900;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+
+.promo__h2{
+    font-family: 'Lato';
+    font-size: 40px;
+    font-weight: 900;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+}
+
+.offer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 98px;
+ }
+ 
+.offer__men {
+    height: 542px;
+    width: 560px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.offer__wight{
+    position: absolute;
+    top: 26px;
+}
+
+.offer__text{
+    position: absolute;
+    top: 20px;
+    margin-left: 16px;
+}
+   
+.offer__accesories{
+    height: 261px;
+    width: 560px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.offer__women{
+    height: 261px;
+    width: 560px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.offer__kids{
+    height: 542px;
+    width: 560px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.Text__full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    .Text__full__h1{
+        top: 1785px;
+        left: 904px;
+        font-family: 'Lato';
+        font-size: 30px;
+        font-weight: bold;
+        color: $color__text;
+    }
+    &__h2{
+        top: 1835px;
+        left: 827px;
+        font-family: 'Lato';
+        font-size: 14px;
+        color:  #9f9f9f;
+    }
+}
+
+
+.product__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.product {
+    width: 263px;
+    position: relative;
+    margin-bottom: 46px;
+}
+
+.product:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.product:hover .product__img {
+    filter: brightness(40%);
+}
+
+.product:hover .product__add {
+    display: flex;
+}
+
+.product:hover .product__add__XX {
+    display: flex;
+}
+
+.product:hover .product__add__love {
+    display: flex;
+}
+
+.product:hover .product__star {
+    display: block;
+}
+
+.product__all {
+    width: 263px;
+    position: relative;
+}
+
+.product__add {
+    position: absolute;
+    top: 97px;
+    left: 70px;
+    height: 39px;
+    width: 123px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.product__add:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.product__add__XX {
+    position: absolute;
+    top: 145px;
+    left: 70px;
+    height: 38px;
+    width: 57px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.product__add__XX:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.product__add__love {
+    position: absolute;
+    top: 145px;
+    left: 135px;
+    height: 38px;
+    width: 57px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.product__add__love:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__name {
+    font-size: 13px;
+    color: $color__text;
+    text-transform: uppercase;
+}
+
+.product__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: $color__brand;
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-transform: uppercase;
+}
+
+.product__star {
+    display: none;
+}
+
+.product__content {
+    padding: 19px 13px;
+}
+
+.button__product{
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.button__pointer{
+    margin-right: 30px;
+}
+
+.button__all{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 54px;
+    top: 2719px;
+    left: 694px;
+    height: 48px;
+    width: 212px;
+    background-color: $color__brand;
+}
+
+.offer__black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 113px;
+}
+
+.offer__snow{
+    top: 2880px;
+    left: 229px;
+    height: 529px;
+    width: 767px;
+    background: url(img/1314.png);
+}
+
+.offer__snow__black{
+    height: 529px;
+    width: 767px;
+    background: url(img/1321.png);
+}
+
+.offer__30_women{
+    height: 78px;
+    width: 293px;
+    padding-top: 150px;
+    padding-left: 40px;
+}
+
+.offer__advantages{
+    top: 2880px;
+    left: 229px;
+    height: 529px;
+    width: 1140px;
+    background-color: $color__text;
+    background: url(img/1311.png);   
+}
+
+.free__delivery{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.car{
+    margin-top: 48px;
+    margin-left: 35px;
+}
+
+.free__delivery__h1{
+    padding-right: 30px;
+    padding-top: 48px;
+    top: 2935px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbfbfb;
+    margin-left: 25px;
+    margin-right: 35px;
+    margin-bottom: 9px;
+   
+}
+
+.free__delivery__h2{
+    top: 2972px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    color: #fbfbfb;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    margin-left: 105px;
+    margin-right: 35px;
+}
+
+.sales__discounts{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.percent{
+    margin-top: 48px;
+    margin-left: 35px;
+}
+
+.sales__discounts__h1{
+    padding-right: 30px;
+    padding-top: 48px;
+    top: 2935px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbfbfb;
+    margin-left: 25px;
+    margin-right: 35px;
+    margin-bottom: 9px;
+}
+
+.sales__discounts__h2{
+    top: 2972px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    color: #fbfbfb;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    margin-left: 105px;
+    margin-right: 35px;
+}
+
+.quality__assurance{
+    display: flex;
+    flex-flow: row wrap;
+}
+.crown{
+    margin-top: 48px;
+    margin-left: 35px;
+}
+
+.quality__assurance__h1{
+    padding-right: 30px;
+    padding-top: 48px;
+    top: 2935px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbfbfb;
+    margin-left: 25px;
+    margin-right: 35px;
+    margin-bottom: 9px;
+}
+
+.quality__assurance__h2{
+    top: 2972px;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    color: #fbfbfb;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    margin-left: 105px;
+    margin-right: 35px;
+}
+
+.comment__subscribe{
+    background: url(img/2196.png), url(img/2194.png) no-repeat center;
+    background-size: cover;
+}
+
+.cooment__subscribe__shadow{
+    display: flex;
+    height: 438px;    
+}
+
+.comment{
+    display: flex;
+    height: 438px;
+    width: 50%;
+}
+
+.foto__comment{
+    display: flex;
+    height: 171px; 
+    margin-top: 111px;
+}
+
+.foto{
+    display: flex;
+    align-items: baseline;
+    margin-top: 15px;
+}
+
+
+.foto__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.foto__text__h1{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: italic;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.foto__text__h2{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    color: $color__brand;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.foto__text__h3{
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 300;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 14px;
+}
+
+.subscribe{
+    width: 50%;
+    border-left: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe__h1{
+    font-family: 'Lato';
+    font-size: 24px;
+    color: $color__text;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
+.subscribe__h2{
+    padding-bottom: 37px;
+    font-family: 'Lato';
+    font-size: 14px;
+    color: $color__text;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+.email__subscribe{
+    display: flex;
+}
+
+.email__subscribe input,
+.header__form{
+    border: none;
+}
+
+.email__subscribe .input{
+    width: 100%;
+    padding: 12px 57px 12px 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    border-radius: 20px 0px 0px 20px;
+    background: #EEE;
+	font: 16px Tahoma, Arial, sans-serif;
+	color: #555;
+    outline: none;
+    
+}
+
+.email__subscribe .submit{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    background-color: $color__brand;
+    border-radius: 0px 23px 23px 0px;
+    top: 0;
+    right: -30%;
+    cursor: pointer;
+    opacity: 0.5;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submit:hover {
+    opacity: 0.8;
+}
+
+
+.footer{
+    display: flex;
+    flex-flow: column;
+    margin-top: 110px;
+}
+
+.footer__top{
+    display: flex;
+}
+
+.footer__top__logo__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top__text{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(137, 137, 137, 1);
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.footer__company{
+    margin-left: 61px;
+}
+
+.company{
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: bold;
+    color: $color__brand;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    margin-bottom: 45px;
+}
+
+.footer__information{
+    margin-left: 130px;
+}
+
+.footer__shop__category{
+    margin-left: 80px;
+}
+
+.footer__bootom{
+    margin-top: 100px;
+    background-image: url(img/415.png);
+    height: 79px;
+    width: 1600px;
+    display: flex;
+}
+.footer__brand{
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #7a7a7a;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    margin-top: 33px;
+}
+
+.footer__bootoom__right{
+    display: flex;
+    margin-left: 700px;
+    margin-top: 35px;
+}
+
+.box__face{
+    display: flex;
+}
+
+
+
+
+.fab {
+    color:rgba(178, 178, 178, 1);
+    padding: .2em .25em .15em;
+    border: solid .08em ;
+    border-radius: .1em;
+}
+  
+.fab:hover {
+    color: pink;
+}
+
+.promo__new_arrivals{
+    background: url(img/1605.png), no-repeat center;
+    background-size: cover;  
+}
+
+.new__arrivals{
+    display: flex;
+    height: 148px;
+}
+
+.promo__new_arrivals__right{
+    display: flex;
+    height: 148px;
+    width: 50%;
+    align-items: center;
+}
+
+.promo__h41{
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 900;
+    color: $color__brand;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.promo__new_arrivals__left{
+    display: flex;
+    height: 148px;
+    width: 50%; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.promo__h42{
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(99, 99, 99, 1);
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.promo__h43{
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: bold;
+    color: $color__brand;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.main__men{
+    background-size: cover;
+}
+
+.main__menu__box{
+    display: flex;
+     
+}
+
+.menu__box{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    .Category__ul{
+        list-style-type: none;
+      
+        .Category__a{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 33px;
+        }
+    }
+}
+
+.Category__text{
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(111, 110, 110, 1);
+    line-height: 20px;
+    text-transform: uppercase;
+    border-left: solid rgba(239, 91, 112, 1);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+.main__men__box{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding-left: 50px;  
+}
+
+.catalog__men{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.trending{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+    .trending__now{
+        display: flex;
+        flex-flow: row wrap;
+        top: 405px;
+        left: 524px;
+        width: 176px;
+        .trending__now__h4{
+            width: 111px;
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(111, 110, 110, 1);
+            line-height: 35px;
+            text-transform: uppercase;
+        }
+        &__Bohemian{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 24px;        
+            padding-right: 10px;
+            border-bottom: 1px solid #ececec;  
+        }
+        &__Floral{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 24px;        
+            border-left: solid rgba(223, 223, 223, 1);
+            border-right: solid rgba(223, 223, 223, 1);
+            padding-right: 10px; 
+            padding-left: 10px;
+            border-bottom: 1px solid #ececec;
+        }
+        &__Lace{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 24px;        
+            padding-left: 10px; 
+            border-bottom: 1px solid #ececec; 
+        }
+        &__Bohemian__h5{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 24px;        
+            padding-right: 10px;
+            border-bottom: 1px solid #ececec;  
+        }
+        &__Floral__h5{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 24px;        
+            border-left: solid rgba(223, 223, 223, 1);
+            border-right: solid rgba(223, 223, 223, 1);
+            padding-right: 10px; 
+            padding-left: 10px;
+            border-bottom: 1px solid #ececec;
+        }
+        &__Lace__h5{
+            font-family: 'Lato';
+            font-size: 14px;
+            color: rgba(111, 110, 110, 1);
+            line-height: 24px;        
+            padding-left: 10px; 
+            border-bottom: 1px solid #ececec; 
+        }
+    }
+    
+
+}
+
+.trending__box{
+    display: flex;
+    padding-top: 10px;
+}
+
+.size{
+    display: flex;
+    flex-flow: row wrap;
+    top: 405px;
+    left: 524px;
+    width: 300px;
+    padding-left: 120px;
+    &__h4{
+        width: 111px;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(111, 110, 110, 1);
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+}
+
+.check {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    &__box{
+        width: 16px;
+        font-family: 'OpenSans';
+        font-size: 14px;
+        color:  #ccc;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}
+  
+  label {
+    width: 75px;
+  }
+  
+  .link {
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: #ccc;
+  }
+
+  .price__box{
+      display: flex;
+      .price__52{
+        width: 111px;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(111, 110, 110, 1);
+        line-height: 35px;
+        text-transform: uppercase;
+      }
+      .price__400{
+        width: 111px;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(111, 110, 110, 1);
+        line-height: 35px;
+        text-transform: uppercase;
+        padding-left: 200px;
+      }
+}
+
+  .sort_by{
+    display: flex;      
+    background-color: rgba(243, 243, 243, 1);
+    position: relative;
+    flex-direction: row;
+    height: 60px;
+  }
+    
+  .sort_by_box{
+      display: flex;
+      flex-direction: row;
+      margin: 15px 15px;
+        height: 30px;
+        width: 153px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 1);
+        border-bottom: 1px solid #ececec;
+        padding-left: 10px;
+    } 
+
+    .sort_by_text{
+        display: flex;
+        font-family: 'Lato';
+        font-size: 14px;
+        color: rgba(111, 110, 110, 1);
+        line-height: 26px;
+        padding: 0px 10px 10px 0px;
+        border-right: solid rgba(243, 243, 243, 1);
+                
+    }  
+    .sort_by_name{
+        position: absolute;
+        display: flex;
+        font-family: 'Lato';
+        font-size: 14px;
+        color: rgba(111, 110, 110, 1);
+        line-height: 26px;
+        padding: 0px 0px 10px 80px;
+       
+    } 
+
+.sort_by_show{
+      display: flex;
+      flex-direction: row;
+      margin: 15px 220px;
+        height: 30px;
+        width: 153px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 1);
+        border-bottom: 1px solid #ececec;
+        padding-left: 10px;
+    } 
+ 
+.offer__product{
+    height: 341px;
+    background-color: rgba(34, 34, 36, 1);
+    display: flex;
+    &__man{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        &__delivery{
+            display: flex;
+            flex-direction: column;
+            &__car{
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                margin-top: -110px;
+                margin-bottom: 25px;
+            }
+            &__texth3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 20px;
+                font-weight: bold;
+                color: rgba(251, 251, 251, 1);
+                text-align: center;
+                letter-spacing: 0.03em;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1); 
+            }
+            &__textp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 14px;
+                font-weight: 300;
+                color: rgba(251, 251, 251, 1);
+                text-align: center;
+                letter-spacing: 0.03em;
+                line-height: 24px;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                margin-top: 15px;
+            }
+        }
+        &__SalesDiskounts{
+            display: flex;
+            flex-direction: column;
+            &__percent{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -110px;
+                margin-bottom: 25px;
+            }
+            &__texth3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 20px;
+                font-weight: bold;
+                color: rgba(251, 251, 251, 1);
+                text-align: center;
+                letter-spacing: 0.03em;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1); 
+            }
+            &__textp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 14px;
+                font-weight: 300;
+                color: rgba(251, 251, 251, 1);
+                text-align: center;
+                letter-spacing: 0.03em;
+                line-height: 24px;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1); 
+                margin-top: 15px;
+            }
+        }
+        &__quality{
+            display: flex;
+            flex-direction: column;
+            &__crown{
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                margin-top: -110px;
+                margin-bottom: 25px;
+            }
+            &__texth3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 20px;
+                font-weight: bold;
+                color: rgba(251, 251, 251, 1);
+                text-align: center;
+                letter-spacing: 0.03em;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1); 
+            }
+            &__textp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 14px;
+                font-weight: 300;
+                color: rgba(251, 251, 251, 1);
+                text-align: center;
+                letter-spacing: 0.03em;
+                line-height: 24px;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1); 
+                margin-top: 15px;
+            }
+
+        }
+    }
+}
+ 
+.main__men{
+    display: flex;
+    .product__men{
+        display: flex;
+        flex-direction: column;
+        &__details{
+            display: flex;
+            flex-direction: row;
+            margin: 100px 0px 30px 0px;
+            &__PD{
+                font-family: 'Lato';
+                font-size: 13px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                letter-spacing: -0.01em;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            &__UP{
+                margin-left: 380px;
+                font-family: 'Lato';
+                font-size: 13px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                letter-spacing: -0.01em;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            &__QU{
+                margin-left: 80px;
+                font-family: 'Lato';
+                font-size: 13px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                letter-spacing: -0.01em;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            &__SH{
+                margin-left: 80px;
+                font-family: 'Lato';
+                font-size: 13px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                letter-spacing: -0.01em;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            &__SU{
+                margin-left: 80px;
+                font-family: 'Lato';
+                font-size: 13px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                letter-spacing: -0.01em;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            &__AC{
+                margin-left: 80px;
+                font-family: 'Lato';
+                font-size: 13px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                letter-spacing: -0.01em;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+        }
+        .product__men__123{
+            flex-direction: column;
+            display: flex;
+            border-top: 1px solid rgba(234, 234, 234, 1);
+            border-bottom: 1px solid rgba(234, 234, 234, 1);
+        
+            .product__men__man1{
+            flex-direction: row;
+            display: flex;
+            
+            
+                 &__border{
+                flex-direction: row;
+                display: flex;                
+                margin-top: 20px;
+                }
+            
+                &__mango{
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px 20px 15px;
+                    &__title{
+                    margin-bottom: 20px;
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(34, 34, 34, 1);
+                    text-transform: uppercase;
+                    width: 170px;
+                }
+                    &__cr{
+                    display: flex;
+                    flex-direction: row;
+                    &__color{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        color: rgba(87, 87, 87, 1);
+                        line-height: 20px;
+                    }
+                    &__red{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        font-weight: 300;
+                        color: rgba(111, 110, 110, 1);
+                        line-height: 20px;
+                        margin-left: 5px;
+                        margin-bottom: 8px;
+                    }
+                    }
+                
+            }
+                &__price{
+                margin-left: 220px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+                }
+                &__quantity{
+                margin-left: 150px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+                }
+                &__shipping{
+                margin-left: 115px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+                }
+                &__subtotal{
+                margin-left: 115px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+                }
+                &__action{
+                margin-left: 115px;
+                margin-top: 50px;
+               
+                }
+
+
+            } 
+            .product__men__man2{
+            flex-direction: row;
+            display: flex;
+                       
+            &__border{
+                flex-direction: row;
+                display: flex;                
+                margin-top: 20px;
+            }
+            
+            &__mango{
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px 20px 15px;
+                &__title{
+                    margin-bottom: 20px;
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(34, 34, 34, 1);
+                    text-transform: uppercase;
+                    width: 170px;
+                }
+                &__cr{
+                    display: flex;
+                    flex-direction: row;
+                    &__color{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        color: rgba(87, 87, 87, 1);
+                        line-height: 20px;
+                    }
+                    &__red{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        font-weight: 300;
+                        color: rgba(111, 110, 110, 1);
+                        line-height: 20px;
+                        margin-left: 5px;
+                        margin-bottom: 8px;
+                    }
+                }
+                
+            }
+            &__price{
+                margin-left: 220px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__quantity{
+                margin-left: 150px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__shipping{
+                margin-left: 115px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__subtotal{
+                margin-left: 115px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__action{
+                margin-left: 115px;
+                margin-top: 50px;
+               
+            }
+
+
+            } 
+            .product__men__man3{
+            flex-direction: row;
+            display: flex;
+            
+            
+            &__border{
+                flex-direction: row;
+                display: flex;                
+                margin-top: 20px;
+            }
+            
+            &__mango{
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px 20px 15px;
+                &__title{
+                    margin-bottom: 20px;
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(34, 34, 34, 1);
+                    text-transform: uppercase;
+                    width: 170px;
+                }
+                &__cr{
+                    display: flex;
+                    flex-direction: row;
+                    &__color{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        color: rgba(87, 87, 87, 1);
+                        line-height: 20px;
+                    }
+                    &__red{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        font-weight: 300;
+                        color: rgba(111, 110, 110, 1);
+                        line-height: 20px;
+                        margin-left: 5px;
+                        margin-bottom: 8px;
+                    }
+                }
+                
+            }
+            &__price{
+                margin-left: 220px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__quantity{
+                margin-left: 150px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__shipping{
+                margin-left: 115px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__subtotal{
+                margin-left: 115px;
+                margin-top: 50px;
+                font-family: 'Lato';
+                font-size: 13px;
+                color: rgba(101, 101, 101, 1);
+                line-height: 20px;
+            }
+            &__action{
+                margin-left: 115px;
+                margin-top: 50px;
+               
+            }
+
+
+            } 
+        }
+    }
+}
+
+.shopping{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-bottom: 55px;
+    &__left{
+        display: flex;
+        width: 50%;
+        .submit1{
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(74, 74, 74, 1);
+            text-transform: uppercase;
+            top: 0;
+            right: -30%;
+            cursor: pointer;
+            padding: 10px 10px 10px 10px;
+            text-align: left;
+            border: 1px solid rgba(234, 234, 234, 1);
+        }
+
+      
+    }
+    &__right{
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        .submit2{
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(74, 74, 74, 1);
+            text-transform: uppercase;
+            top: 0;
+            right: -30%;
+            cursor: pointer;
+            padding: 10px 10px 10px 10px;
+            text-align: right;
+            border: 1px solid rgba(234, 234, 234, 1);
+        }
+    }
+   
+    
+}
+
+
+.shoppingTotal{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 90px;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        &__text{
+            font-family: 'Lato';
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(34, 34, 34, 1);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        &__country{
+            height: 45px;
+            margin-bottom: 25px;
+            font-family: 'Lato';
+            font-size: 13px;
+            font-weight: 300;
+            color: rgba(177, 177, 177, 1);
+            border: 1px solid rgba(234, 234, 234, 1);       
+        }
+        &__state{
+            height: 45px;
+            margin-bottom: 25px;
+            font-family: 'Lato';
+            font-size: 13px;
+            font-weight: 300;
+            color: rgba(177, 177, 177, 1);
+            border: 1px solid rgba(234, 234, 234, 1); 
+        }
+        &__postcode{
+            height: 45px;
+            margin-bottom: 25px;
+            font-family: 'Lato';
+            font-size: 13px;
+            font-weight: 300;
+            color: rgba(177, 177, 177, 1);
+            border: 1px solid rgba(234, 234, 234, 1);
+        }  
+        &__submit{
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(74, 74, 74, 1);
+            text-transform: uppercase;
+            top: 0;
+            right: -30%;
+            cursor: pointer;
+            padding: 10px 10px 10px 10px;
+            text-align: left;
+            border: 1px solid rgba(234, 234, 234, 1);
+        }  
+    }
+    &__center{
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        margin-left: 35px;
+        &__text{
+            font-family: 'Lato';
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(34, 34, 34, 1);
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        &__text2{
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 1);
+            margin-bottom: 24px;
+        }
+        &__state{
+            height: 45px;
+            font-family: 'Lato';
+            font-size: 13px;
+            font-weight: 300;
+            color: #b1b1b1;
+            border: 1px solid #eaeaea;
+        }
+        &__submit{
+            font-family: 'Lato';
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(74, 74, 74, 1);
+            text-transform: uppercase;
+            top: 0;
+            right: -30%;
+            cursor: pointer;
+            padding: 10px 10px 10px 10px;
+            text-align: left;
+            border: 1px solid rgba(234, 234, 234, 1);
+        } 
+    }
+    &__right{
+        display: flex;
+        height: 214px;
+        width: 360px;
+        background-color: rgba(245, 243, 243, 1);
+        flex-direction: column;
+        margin-left: 35px;
+        &__sub{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            margin-right: 40px;
+            &__text1{
+                font-family: 'Lato';
+                font-size: 11px;
+                color: rgba(74, 74, 74, 1);
+                text-transform: uppercase;
+                margin-right: 20px;
+            }
+            &__text2{
+                font-family: 'Lato';
+                font-size: 11px;
+                color: rgba(74, 74, 74, 1);
+                text-transform: uppercase;
+            }
+        }
+        &__grand{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 40px;
+            margin-bottom: 25px;
+            &__text1{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                text-transform: uppercase;
+                margin-right: 20px;
+            }
+            &__text2{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(241, 109, 127, 1);
+                text-transform: uppercase;
+            }
+        }
+        &__img{
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-bottom: 30px;
+        }
+        &__form{
+            display: flex;
+            justify-content: center;
+            &__submit{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: #ffffff;
+                letter-spacing: 0.03em;
+                background-color: #f16d7f;
+                top: 0;
+                right: -30%;
+                cursor: pointer;
+                opacity: 0.5;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }  
+
+}
+
+.shoppingTotal__center .shoppingTotal__center__submit {
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  top: 0;
+  right: -30%;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+  border: 1px solid #e6e3e3;
+  margin-top: 25px;
+}
+
+
+.shoppingTotal__right__form__submit:hover {
+    opacity: 0.8;
+}
+
+.shipping{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    &__box{
+        flex-direction: column;
+        &__shipping{
+           
+            flex-direction: row;
+            &__text{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                line-height: 72px;
+                text-transform: uppercase;
+            }
+            &__all{
+                display: flex;
+            }
+            &__left{
+                margin-left: 35px;
+                margin-bottom: 35px;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                &__text1{
+                    display: flex;
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(34, 34, 34, 1);
+                    text-align: right;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                &__text2{
+                    display: flex;
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(179, 178, 178, 1);
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                &__check{
+                    display: flex;
+                    flex-direction: column;
+                    width: 400px;
+                    margin-bottom: 25px;
+                    &__box{
+                        width: 16px;
+                        font-family: 'OpenSans';
+                        font-size: 14px;
+                        color:  #ccc;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                    }
+                    .size-shipping{
+                        width: 524px;
+                        height: 10px;
+                        padding: 4px;
+                        &__text{
+                            font-family: 'Lato';
+                            font-size: 12px;
+                            color: rgba(34, 34, 34, 1);
+                            text-align: right;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                &__text3{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(34, 34, 34, 1);
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                &__text4{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(179, 178, 178, 1);
+                    line-height: 20px;
+                    margin-bottom: 35px;
+                }
+                &__text5{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(179, 178, 178, 1);
+                    line-height: 20px;
+                }
+                &__text6{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(179, 178, 178, 1);
+                    line-height: 20px;
+                }
+                &__submit{
+                    margin-top: 35px;
+                    &__submit1{
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: rgba(74, 74, 74, 1);
+                        text-transform: uppercase;
+                        top: 0;
+                        right: -30%;
+                        cursor: pointer;
+                        padding: 15px 35px 15px 35px;
+                        text-align: left;
+                        border: 1px solid rgba(234, 234, 234, 1);  
+                    }
+                }
+            }
+            &__right{
+                margin-left: 35px;
+                margin-bottom: 35px;
+                display: flex;
+                flex-direction: column;
+                
+                &__text1{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(34, 34, 34, 1);
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                } 
+                &__text2{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(179, 178, 178, 1);
+                    line-height: 20px;
+                    margin-bottom: 30px;
+                }
+                &__text3{
+                    font-family: 'Lato';
+                    font-size: 12px;
+                    color: rgba(34, 34, 34, 1);
+                    line-height: 20px;
+                    &__email{
+                        width: 100%;
+                        padding: 12px 57px 12px 15px;
+                        outline: none;
+                        background-color: rgba(255, 255, 255, 1);
+                        border: 1px solid rgba(234, 234, 234, 1);
+                    }                  
+                }
+                &__text4{
+                    font-family: 'Lato';
+                    font-size: 12px;
+                    color: rgba(34, 34, 34, 1);
+                    line-height: 20px;
+                    &__password{
+                        width: 100%;
+                        padding: 12px 57px 12px 15px;
+                        outline: none;
+                        background-color: rgba(255, 255, 255, 1);
+                        border: 1px solid rgba(234, 234, 234, 1);
+                    }
+                }
+                &__text5{
+                    font-family: 'Lato';
+                    font-size: 13px;
+                    color: rgba(255, 13, 13, 1);
+                    line-height: 20px;
+                    margin-top: 20px;
+                }
+                &__submit{
+                    display: flex;
+                    margin-top: 32px;
+
+                    &__submit1{
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: rgba(74, 74, 74, 1);
+                        text-transform: uppercase;
+                        top: 0;
+                        right: -30%;
+                        cursor: pointer;
+                        padding: 15px 35px 15px 35px;
+                        text-align: left;
+                        border: 1px solid rgba(234, 234, 234, 1);
+                    }
+                    &__text6{
+                        margin-top: 1px;
+                        margin-left: 32px;
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        color: rgba(34, 34, 34, 1);
+                        line-height: 20px;
+                    }
+                }
+            }
+
+        }
+        &__billing{
+            padding: 0px 10px 10px 0px;
+            border-top: 1px solid rgba(232, 232, 232, 1);
+            &__text{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                line-height: 72px;
+                text-transform: uppercase;
+            } 
+        } 
+        &__information{
+            padding: 0px 10px 10px 0px;
+            border-top: 1px solid rgba(232, 232, 232, 1);
+            &__text{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                line-height: 72px;
+                text-transform: uppercase;
+            } 
+        } 
+        &__method{
+            padding: 0px 10px 10px 0px;
+            border-top: 1px solid rgba(232, 232, 232, 1);
+            &__text{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                line-height: 72px;
+                text-transform: uppercase;
+            } 
+        }
+        &__payment{
+            padding: 0px 10px 10px 0px;
+            border-top: 1px solid rgba(232, 232, 232, 1);
+            &__text{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                line-height: 72px;
+                text-transform: uppercase;
+            } 
+        }
+        &__order{
+            padding: 0px 10px 10px 0px;
+            border-top: 1px solid rgba(232, 232, 232, 1);
+            border-bottom: 1px solid rgba(232, 232, 232, 1);
+            &__text{
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(34, 34, 34, 1);
+                line-height: 72px;
+                text-transform: uppercase;
+            } 
+        }  
+    }
+
+}
+
+.also{
+    display: flex;
+    height: 455px;
+    margin-bottom: 100px;
+   
+    &__all{
+        display: flex;
+        flex-direction: column;
+        &__text{
+            font-family: 'Lato';
+            font-family: 'Lato';
+            font-size: 24px;
+            font-weight: 900;
+            color: rgba(77, 77, 77, 1);
+            text-align: center;
+            line-height: 20px;
+            text-transform: uppercase;
+            margin-bottom: 75px;
+        }
+        &__pr{
+            display: flex;
+            flex-direction: row;
+            &__product{
+                display: flex;
+                position: relative;
+                flex-direction: column;  
+                margin-bottom: 100px; 
+                margin-right: 35px;         
+                &__img{
+                    height: 280px;
+                    width: 260px;
+                    &__img1{
+                        position: absolute;
+                    }
+                    &__img2{
+                        position: absolute;
+                        margin-left: 70px;
+                        margin-top: 5px;
+                    }
+                }
+                &__content{
+                    margin-top: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    &__name{
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        color: rgba(111, 110, 110, 1);
+                        text-transform: uppercase;
+                    }
+                    &__price{
+                        display: flex;
+                        margin-top: 18px;
+                        &__price{
+                            font-family: 'Lato';
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: rgba(241, 109, 127, 1);
+                            text-transform: uppercase;
+                        }
+                        &__img{
+                            margin-left: 128px;
+                        }
+                    }
+        
+                }
+            }
+            &__product1{
+                display: flex;
+                position: relative;
+                flex-direction: column;  
+                margin-bottom: 100px; 
+                margin-right: 35px;         
+                &__img{
+                    height: 280px;
+                    width: 260px;
+                    &__img1{
+                        position: absolute;
+                    }
+                    &__img2{
+                        position: absolute;
+                    }
+                }
+                &__content{
+                    margin-top: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    &__name{
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        color: rgba(111, 110, 110, 1);
+                        text-transform: uppercase;
+                    }
+                    &__price{
+                        display: flex;
+                        margin-top: 18px;
+                        &__price{
+                            font-family: 'Lato';
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: rgba(241, 109, 127, 1);
+                            text-transform: uppercase;
+                        }
+                        &__img{
+                            margin-left: 128px;
+                        }
+                    }
+        
+                }
+            }
+        }
+        
+    }
+}
+.picter__product__img{
+    margin-left: 250px;
+   }
+
+.moschino{
+    &__moschino{
+        margin-bottom: 120px;
+        &__box{
+            display: flex;
+            flex-direction: column;
+            width: 1141px;
+            height: 730px;
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(234, 234, 234, 1);
+            &__title{
+                margin-top: 73px;
+                font-family: 'Lato';
+                font-size: 14px;
+                font-weight: bold;
+                color: rgba(241, 109, 127, 1);
+                text-align: center;
+                line-height: 24px;
+                border-style: none none solid;
+                border-color: rgba(234, 234, 234, 1);  
+                width: 247px;
+                margin-left: 450px;             
+            }
+            &__title2{
+                margin-top: 17px;
+                font-family: 'Lato';
+                font-size: 18px;
+                font-weight: 900;
+                color: rgba(77, 77, 77, 1);
+                text-align: center;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+            &__discribe{
+                display: flex;
+                flex-direction: column;
+                margin-top: 65px;
+                width: 625px;
+                margin-left: 270px;
+            
+                &__title{                     
+                    font-family: 'Lato';
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: rgba(94, 94, 94, 1);
+                    text-align: center;
+                    line-height: 24px;                   
+                }
+                &__material{
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 150px;
+                    margin-top: 25px;
+                    &__cotton{
+                        display: flex;
+                        &__grey{
+                            font-family: 'Lato';
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: rgba(185, 185, 185, 1);
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                        &__black{
+                            font-family: 'Lato';
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: rgba(47, 47, 47, 1);
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                    }
+                    &__binbur{
+                        display: flex;
+                        margin-left: 25px;
+                        &__grey{
+                            font-family: 'Lato';
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: rgba(185, 185, 185, 1);
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                        &__black{
+                            font-family: 'Lato';
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: rgba(47, 47, 47, 1);
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                &__price{
+                    margin-top: 37px;
+                    &__text{
+                        font-family: 'Lato';
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: rgba(239, 91, 112, 1);
+                        text-align: center;
+                        line-height: 24px;
+                    }
+                }
+                &__border{
+                    margin-top: 47px;
+                    background-color: rgba(239, 91, 112, 1);
+                    border: 1px solid rgba(234, 234, 234, 1);
+                }
+                &__choose{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 67px;
+                    &__color{
+                        display: flex;
+                        flex-direction: column;
+                        &__text{
+                            font-family: 'Lato';
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: rgba(47, 47, 47, 1);
+                            line-height: 24px;
+                        }
+                        &__box{
+                            margin-top: 15px;
+                            height: 35px;
+                            width: 144px;
+                            background-color: rgba(255, 255, 255, 1);
+                            border: 1px solid rgba(234, 234, 234, 1);
+                            outline: none;
+                            &__red{
+                                font-family: 'Lato';
+                                font-size: 13px;
+                                color: rgba(188, 188, 188, 1);
+                                text-align: center;
+                                line-height: 24px;
+                                cursor: pointer;
+                                opacity: 0.8;
+                                padding: 8px;
+                                z-index: 100;
+                                &__ul{
+                                    font-family: 'Lato';
+                                    font-size: 13px;
+                                    color: rgba(188, 188, 188, 1);
+                                    text-align: center;
+                                    line-height: 24px;
+                                    list-style-type: none;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
